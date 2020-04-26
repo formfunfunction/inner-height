@@ -1,11 +1,11 @@
-# @fff/inner-height
+# @formfunfunction/inner-height
 > Retrieve a consistent, accurate `window.innerHeight` measurement from iOS and Andriod
 
 **This is a fork of [ios-inner-height](https://github.com/tylerjpeterson/ios-inner-height). We've just added Android to the user-agent detection as some android devices also suffer from the same expanding and contracting menu.**
 We've also added the ability to turn off the user-agent detection all-together.
 
 ```javascript
-var innerHeight = require('ios-inner-height');
+var innerHeight = require('@formfunfunction/inner-height');
 
 innerHeight(true); // bypasses UAString detection
 ```
@@ -47,7 +47,7 @@ This page reports the current height returned by this module and by calling `win
 Install via npm:
 
 ```sh
-$ npm i -S ios-inner-height
+$ npm i --save @formfunfunction/inner-height
 ```
 
 
@@ -57,7 +57,7 @@ It will automatically account for the window's current orientation.
 And all measurements are done upon instantiation, so future calls should introduce zero DOM overhead.
 
 ```javascript
-var innerHeight = require('ios-inner-height');
+var innerHeight = require('@formfunfunction/inner-height');
 
 // now anytime you need it, get a reliable window height
 console.log(innerHeight());
