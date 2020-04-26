@@ -1,5 +1,14 @@
-# ios-inner-height
-> Retrieve a consistent, accurate `window.innerHeight` measurement from iOS
+# @fff/inner-height
+> Retrieve a consistent, accurate `window.innerHeight` measurement from iOS and Andriod
+
+**This is a fork of [ios-inner-height](https://github.com/tylerjpeterson/ios-inner-height). We've just added Android to the user-agent detection as some android devices also suffer from the same expanding and contracting menu.**
+We've also added the ability to turn off the user-agent detection all-together.
+
+```javascript
+var innerHeight = require('ios-inner-height');
+
+innerHeight(true); // bypasses UAString detection
+```
 
 iOS Safari has a neat feature that results in `window.innerHeight` providing different values based on whether or not the URL control and menu bar are expanded.
 This is the case when a page initially loads - or if the page content is shorter than the screen.

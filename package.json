@@ -1,7 +1,7 @@
 {
-  "name": "ios-inner-height",
-  "version": "1.1.1",
-  "description": "Retrieve a consistent, accurate `window.innerHeight` measurement from iOS",
+  "name": "@formfunfunction/inner-height",
+  "version": "2.0.0",
+  "description": "Retrieve a consistent, accurate `window.innerHeight` measurement from iOS and Android",
   "author": "Tyler Peterson <tylerjpeterson@gmail.com>",
   "main": "dist/ios-inner-height.js",
   "scripts": {
